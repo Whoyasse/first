@@ -29,7 +29,7 @@ WebDriver driver = new ChromeDriver();
 
             driver.findElement(By.id("first_name")).sendKeys("Dmitrii");
             driver.findElement(By.id("last_name")).sendKeys("Tikhonov");
-            driver.findElement(By.id("email")).sendKeys("dimitri");
+            driver.findElement(By.id("email")).sendKeys("dimitriitikhonov@gmail.com");
             driver.findElement(By.id("phone")).sendKeys("+4917670574209");
 
             WebElement att = driver.findElement(By.xpath("//input[@name='file']"));
