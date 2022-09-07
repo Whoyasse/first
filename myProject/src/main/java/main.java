@@ -45,7 +45,7 @@ WebDriver driver = new ChromeDriver();
            WebElement yes = driver.findElement(By.xpath("//li[@class='select2-results-dept-0 select2-result select2-result-selectable'] "));
            yes.click();
 
-           driver.findElement(By.id("job_application_answers_attributes_2_text_value")).sendKeys("https://github.com/Whoyasse/");
+           driver.findElement(By.id("job_application_answers_attributes_2_text_value")).sendKeys("https://github.com/Whoyasse/first/blob/main/myProject/src/main/java/main.java");
 
           WebElement btn = driver.findElement(By.id("submit_app"));
           btn.click();
@@ -53,7 +53,7 @@ WebDriver driver = new ChromeDriver();
         } catch (InterruptedException e) {
 
         }finally {
-            //driver.quit();
+            driver.quit();
         }
 
     }
